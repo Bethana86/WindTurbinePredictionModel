@@ -10,9 +10,9 @@ def load_data(url):
     df = pd.read_csv(url)
     return df
 
-data = load_data("https://raw.githubusercontent.com/amrhkm/wind-turbine-power-prediction/master/df.csv")
+data = load_data("https://github.com/Bethana86/WindTurbinePredictionModel/blob/main/df.csv")
 
-ori_data = load_data('https://raw.githubusercontent.com/amrhkm/wind-turbine-power-prediction/master/T1.csv')
+ori_data = load_data('https://github.com/Bethana86/WindTurbinePredictionModel/blob/main/T1.csv')
 
 # Load the trained model from the file
 @st.cache_resource
@@ -26,8 +26,8 @@ model = load_model()
 
 # Page header
 st.title("Wind Turbine Power Prediction")
-st.write(f"Made by Amir Hakim, visit my [data portfolio](https://amrhkm.com/) to view my other projects")
-st.write(f"View the [data wrangling and EDA process](https://nbviewer.org/github/amrhkm/wind-turbine-power-prediction/blob/master/wrangling-eda.ipynb)")
+st.write(f"Made by Bethanasamy Rajamani")
+st.write(f"View the [data wrangling and EDA process](https://github.com/Bethana86/WindTurbinePredictionModel/blob/main/wrangling-eda.ipynb)")
 st.header(f"Columns of the [original data](https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset)")
 st.write("""
 - Date/Time : readings for 10 minutes intervals
